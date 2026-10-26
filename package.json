@@ -1,0 +1,13 @@
+{
+  "name": "api-email-status",
+  "private": true,
+  "type": "module",
+  "description": "status.api.email: availability checks every 5 minutes from GitHub Actions, history kept in this repository",
+  "engines": { "node": ">=22" },
+  "scripts": {
+    "test": "node --test 'test/*.test.mjs'",
+    "check": "node check.mjs",
+    "build": "node build.mjs"
+  },
+  "license": "MIT"
+}
