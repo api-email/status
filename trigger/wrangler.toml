@@ -1,0 +1,9 @@
+# Deploy: npx wrangler deploy && npx wrangler secret put GITHUB_TOKEN  (run in this directory)
+# GITHUB_TOKEN: fine-grained token for api-email/status only, Actions: Read and write.
+name = "api-email-status-trigger"
+main = "worker.mjs"
+compatibility_date = "2026-10-01"
+workers_dev = false
+
+[triggers]
+crons = ["*/5 * * * *"]
