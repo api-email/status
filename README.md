@@ -12,6 +12,8 @@ Every 5 minutes (as often as GitHub's scheduler allows), the [check workflow](.g
 
 A failed check is retried once after 5 seconds. Each run appends one JSON line per check to `data/<UTC date>.ndjson` and commits it, so the history in this repository is the record behind the page. The page is rebuilt from the last 90 days and published with GitHub Pages; [status.json](https://status.api.email/status.json) has the same data.
 
+GitHub's schedule is best-effort and can skip runs or start late, so a small Cloudflare Worker in [`trigger/`](trigger/) also starts the workflow every 5 minutes through the GitHub API. The checks still run on GitHub's runners; the Worker only decides when.
+
 ```bash
 npm test         # unit tests, no dependencies
 node check.mjs   # run the checks once and append to data/
