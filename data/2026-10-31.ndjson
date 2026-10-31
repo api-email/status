@@ -2,3 +2,4 @@
 {"t":"2026-10-31T08:58:15Z","results":{"api":{"ok":true,"ms":501,"code":200},"website":{"ok":true,"ms":477,"code":200},"mx":{"ok":true,"ms":439}}}
 {"t":"2026-10-31T15:15:12Z","results":{"api":{"ok":true,"ms":427,"code":200},"website":{"ok":true,"ms":382,"code":200},"mx":{"ok":true,"ms":334}}}
 {"t":"2026-10-31T19:22:17Z","results":{"api":{"ok":true,"ms":409,"code":200},"website":{"ok":true,"ms":365,"code":200},"mx":{"ok":true,"ms":360}}}
+{"t":"2026-10-31T22:39:33Z","results":{"api":{"ok":true,"ms":469,"code":200},"website":{"ok":true,"ms":365,"code":200},"mx":{"ok":false,"error":"ETIMEDOUT","ms":252,"retried":true}}}
